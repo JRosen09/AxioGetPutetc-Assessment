@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 class="header">Do you know you're Amazing?</h1>
+    <title>Back End Assessment</title>
+  </head>
+
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <br />
+    <section>
+      <fieldset>
+        <legend>
+          <h2>Enter First Name to get Validation</h2>
+        </legend>
+
+        <form id="first-name">
+          <input
+            type="text"
+            id="first-name-input"
+            placeholder="EnterFirst Name"
+          />
+        </form>
+        <br />
+        <button id="validationButton">Get Validation</button>
+      </fieldset>
+    </section>
+    <section></section>
+    <br />
+
+    <section>
+      <h2>Pick a time Period</h2>
+      <fieldset>
+        <legend>
+          Think of an event in your life time you would like to change.
+        </legend>
+        <text>Pick which time period it is in:</text>
+        <label
+          ><input
+            id="past"
+            type="radio"
+            name="past-present-future"
+            value="past"
+            checked
+          />
+          Past</label
+        >
+        <label
+          ><input
+            id="outdoor"
+            type="radio"
+            name="past-present-future"
+            value="outdoor"
+          />
+          Present</label
+        >
+        <label>
+          <input
+            id="future"
+            type="radio"
+            name="past-present-future"
+            value="future"
+          />
+          Future</label
+        >
+        <br />
+        <label for="positiveNegative">Is the event Positive Or Negative?</label>
+        <select name="positiveNegative" id="positiveNegative">
+          <option value="positive">Positive</option>
+          <option value="negative">Negative</option>
+          <button id="resolveButton">Resolve</button>
+        </select>
+      </fieldset>
+    </section>
+    <br />
+    <section>
+      <h2>Delete an event from your life</h2>
+      <fieldset>
+        <legend>Type in 1 event you would love to delete</legend>
+        <textarea name="deleteEvent" id="" cols="30" rows="10"></textarea>
+        <button type="submitDelete" id="deleteBtn">Delete</button>
+      </fieldset>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
